@@ -199,7 +199,7 @@ def treinar_round_robin(pistas_treino, agente, n_episodios_por_pista,
                 action,
                 reward,
                 obs_prox,
-                term
+                term or trunc
             )
 
             obs = obs_prox
