@@ -286,10 +286,12 @@ def avaliar(env, agente, n_episodios=10):
 
     agente.eps = eps_original
 
-    return max(
-        resultados,
-        key=lambda x: x["recompensa_total"]
-    )
+    sucessos = [r for r in resultados if r["sucesso"]]
+
+    if sucessos:
+        return max(sucessos, key=lambda x: x["recompensa_total"])
+
+    return max(resultados, key=lambda x: x["recompensa_total"])
 
 
 # ============================================================================
