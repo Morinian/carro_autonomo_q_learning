@@ -1,12 +1,9 @@
-````md
 # EP Carro Autônomo — Q-Learning Tabular
 
 ## 👥 Integrantes
 - Matheus Lima  
 - Eric Donato  
 - Paula Martins de Souza  
-
----
 
 ## 🚀 Como rodar o projeto
 
@@ -25,7 +22,7 @@ python solucao.py --episodios-por-pista 30000
 
 ---
 
-### 3. Forçar re-treinamento (opcional)
+### 3. Forçar re-treinamento
 
 ```bash
 python solucao.py --episodios-por-pista 30000 --recarregar
@@ -48,8 +45,3 @@ Após execução serão criados:
 * `treinamento/qlearning.pkl`
 * `q_learning_pista_17.txt`
 * `q_learning_pista_18.txt`
-
-```
-
-Se quiser, posso deixar isso ainda mais “formato professor deita e aceita sem olhar”.
-```
